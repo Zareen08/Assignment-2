@@ -91,8 +91,8 @@ main .banner{
 }
 
 .img{
-    width: 469px;
-    height: 575px;
+    max-width:  469px;
+    min-height: 575px;
 }
 .bt{
     background-color: black;
@@ -134,14 +134,14 @@ main .banner{
 }
 .card a{
     text-decoration: none;
-    width:103px;
-    height: 28px;
+    max-width:103px;
+    min-height: 28px;
     font-weight: bold;
 
 }
 .card img{
-    width: 137px;
-    height: 137px;
+    max-width: 137px;
+    min-height: 137px;
 }
 .c5{
     color: #8700FF;
@@ -174,8 +174,8 @@ h3{
 }
 .bn{
     border-radius: 30px;
-    height: 60px;
-    width: 60px;
+    max-width:  60px;
+    min-height:  60px;
 }
  .fa-solid{
     
@@ -183,8 +183,8 @@ h3{
 }
 
 .fa{margin-top: 80px;
-    width: 130px;
-    height: 60px;
+    max-width: 130px;
+    min-height: 60px;
 }
 
 .stories{
@@ -268,8 +268,8 @@ h3{
     font-weight: 500;
 }
 .btn{
-  width: 174px;
-  height: 40px;
+  max-width:  174px;
+  min-height: 40px;
   border-radius: 48px;
   position: relative;
   top: -27px;
