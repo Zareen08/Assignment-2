@@ -3,7 +3,7 @@ header{
     
     max-width: 1440px;
     min-height: 102px;
-    padding: 20 0;
+    padding: 20px 0;
 }
 
 nav{
@@ -102,10 +102,78 @@ main .banner{
     font-size: 20px;
 }
 
+.cards{
+   text-align: center;
+    margin-inline: auto;
+    max-width: 1440px;
+    min-height: 879px;
+    padding: 60px 0;
+    justify-content: center;
+    align-items: center;
+}
 
+.cards h5{
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 31px;
+}
+.cards p, .card a{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 28px;
+}
+.cardss{
+    margin-inline: auto;
+    display: flex;
+    gap: 24px;
+    max-width: 1160px;
+    min-height: 482px;
+    justify-content: center;
+    align-items: center;
+}
+.card a{
+    text-decoration: none;
+    width:103px;
+    height: 28px;
+    font-weight: bold;
+
+}
+.card img{
+    width: 137px;
+    height: 137px;
+}
+.c5{
+    color: #8700FF;
+}
+
+.cl1{
+    background: linear-gradient(#DEF5FF,white);
+}
+.cl2{
+    background: linear-gradient(#FFF4DC,white);
+}
+.cl3{
+    background: linear-gradient(#F2E8FF,white);
+}
+.card{
+    min-height: 477px;
+    max-width: 368px;
+    border: #D5D6D8 solid 1px;
+    padding-top: 25px;
+    border-radius:19px ;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.08);
+    justify-content: center;
+    align-items: center;
+}
+
+h3{
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 57px;
+}
 
 @media screen and (max-width:576px){
-    nav, header, main .banner, .banner .content, .banner .img {
+    nav, header, main .banner, .banner .content, .banner .img, .cards, .cardss, .card {
         width: calc(100%-40px);
 
     }
@@ -126,6 +194,12 @@ main .banner{
     
     nav h2 , nav ul, .btn-1 {
         display: none;
+    }
+    .bt{
+        display: block;
+    }
+    .cardss{
+        flex-direction: column;
     }
 }
     
