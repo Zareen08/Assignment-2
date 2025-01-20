@@ -187,10 +187,120 @@ h3{
     height: 60px;
 }
 
-@media screen and (max-width:576px){
-    nav, header, main .banner, .banner .content, .banner .img, .cards, .cardss, .card {
-        width: calc(100%-40px);
+.stories{
+    max-width: 1440px;
+    min-height: 1118px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-inline: auto;
+    background: linear-gradient(white,#FFF4DC);
+    padding: 60px 0;
+   
+}
 
+.stories h5{
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 31px;
+}
+
+.box1, .box2, .box3, .box4, .box5{
+    border: #D5D6D8 solid 1px;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.08);
+    border-radius: 16px;
+}
+.box1{
+   
+   max-width: 540px;
+    min-height: 630px;
+    grid-area: box1;
+}
+.box2{
+    max-width: 291px;
+    min-height: 301px;
+    grid-area: box2;
+}
+.box3{
+    max-width: 291px;
+    min-height: 301px;
+    grid-area: box3;
+}
+.box4{
+    max-width: 291px;
+    min-height: 301px;
+    grid-area: box4;
+}
+.box5{
+    max-width: 291px;
+    min-height: 301px;
+    grid-area: box5;
+}
+.grid img{
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+}
+.grid{
+    margin-inline: auto;
+    max-width: 1160px;
+    min-height: 631px;
+    display: grid;
+    gap: 19px;
+    grid-template-areas: 
+    "box1 box1 box2 box3" 
+    "box1 box1 box4 box5" ;
+    
+}
+
+.grid h5{
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 38px;
+}
+.grid h6{
+    font-size: 15px;
+    line-height: 28px;
+    font-weight: bold;
+}
+.grid p{
+    font-size: 15px;
+    font-weight: 500;
+}
+.btn{
+  width: 174px;
+  height: 40px;
+  border-radius: 48px;
+  position: relative;
+  top: -27px;
+  border: transparent;
+
+}
+
+.c11{
+    background-color: #3CD8E8;
+}
+.c12{
+    background-color: #95B226;
+}
+.c13{
+    background-color: #5D58F0;
+}
+@media screen and (max-width:576px){
+    nav, header, main .banner, .banner .content, .banner .img, .cards, .cardss, .card, .grid {
+        width: calc(100%-30px);
+
+    }
+    .box3, .box2, .box4, .box5{
+        width: 50%;
+    }
+
+    .content, .banner{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
     }
     .banner{
         flex-direction: column-reverse;
@@ -218,6 +328,19 @@ h3{
     }
 
     .bn{
+        display: none;
+    }
+
+    .grid{
+        
+        grid-template-areas: 
+        " box2 box3" 
+        " box4 box5"
+        " box2 box3" ;
+        
+    }
+
+    .box1{
         display: none;
     }
 }
