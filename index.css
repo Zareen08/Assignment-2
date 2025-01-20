@@ -1,29 +1,29 @@
 
 header{
     
-    width: 1440px;
-    height: 102px;
+    max-width: 1440px;
+    min-height: 102px;
     padding: 20 0;
 }
 
 nav{
     display: flex;
     margin-inline: auto;
-    width: 1160px;
-    height: 62px;
+    max-width: 1160px;
+    min-height: 62px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 nav div{
-    width: 202px;
-    height: 62px;
+    max-width: 202px;
+    min-height: 62px;
     display: flex;
     gap: 18px;
 }
 nav ul{
-    width: 387px;
-    height: 30px;
+    max-width: 387px;
+    min-height: 30px;
     display: flex;
     align-items: center;
 }
@@ -48,8 +48,8 @@ nav li a{
     color: #5D58EF;
 }
 .btn-1{
-    width: 197px;
-    height: 50px;
+    max-width: 197px;
+    min-height: 50px;
     background-color: #FD6E0A;
     font-size: 20px;
     font-weight: bold;
@@ -67,15 +67,53 @@ hr{
     display: none;
 }
 
+main .banner{
+    display: flex;
+    max-width: 1159px;
+    min-height: 575px;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-inline: auto;
+}
 
+.banner .content{
+    justify-content: center;
+    align-items: center;
+    max-width:  640px;
+    min-height: 331px;
+    gap: 24px;
+}
+.content h2{
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 61px;
+}
 
+.img{
+    width: 469px;
+    height: 575px;
+}
+.bt{
+    background-color: black;
+}
+
+.banner p{
+    font-size: 20px;
+}
 
 
 
 @media screen and (max-width:576px){
-    nav,header{
+    nav, header, main .banner, .banner .content, .banner .img {
         width: calc(100%-40px);
 
+    }
+    .banner{
+        flex-direction: column-reverse;
+    }
+    nav{
+        justify-content: space-between;
     }
     .icon{
         display: block;
