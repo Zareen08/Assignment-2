@@ -103,6 +103,7 @@ main .banner{
 }
 
 .cards{
+    
    text-align: center;
     margin-inline: auto;
     max-width: 1440px;
@@ -171,6 +172,20 @@ h3{
     font-size: 46px;
     line-height: 57px;
 }
+.bn{
+    border-radius: 30px;
+    height: 60px;
+    width: 60px;
+}
+ .fa-solid{
+    
+    font-size: 30px;
+}
+
+.fa{margin-top: 80px;
+    width: 130px;
+    height: 60px;
+}
 
 @media screen and (max-width:576px){
     nav, header, main .banner, .banner .content, .banner .img, .cards, .cardss, .card {
@@ -200,6 +215,10 @@ h3{
     }
     .cardss{
         flex-direction: column;
+    }
+
+    .bn{
+        display: none;
     }
 }
     
