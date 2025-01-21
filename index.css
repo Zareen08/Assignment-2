@@ -286,13 +286,92 @@ h3{
 .c13{
     background-color: #5D58F0;
 }
+
+footer{
+    
+    max-width: 1439px;
+    min-height: 519px;
+    background-color: #01ACFD;
+    margin-inline: auto;
+}
+
+.fcon{
+    display: flex;
+    max-width: 1070px;
+    min-height: 222px;
+    gap: 40px;
+    justify-content: space-around;
+    margin-inline: auto;
+    margin-block: auto;
+}
+
+.f1{
+    color: white;
+    max-width: 400px;
+}
+
+.logo{
+    display: flex;
+    max-width: 300px;
+    min-height: 82px;
+    gap: 11px;
+}
+
+.logo h4{
+    font-weight: bold;
+    font-size: 42px;
+}
+.f1 p{
+    max-width: 400px;
+    font-size: 20px;
+    color: white;
+}
+
+.f2{
+    text-align: left;
+    justify-content: left;
+}
+
+.f2 h4, .f3 h4{
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+.f2 ul{
+   position: relative;
+   left: -35px;
+}
+
+.f2 ul li{
+    list-style: none;
+}
+
+.f2 ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400px;
+    color: white;
+}
+
+marquee{
+    margin-top: 50px;
+    behavior: inherit;
+    direction: ltr;
+    color: #FD6E0A;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+
 @media screen and (max-width:576px){
-    nav, header, main .banner, .banner .content, .banner .img, .cards, .cardss, .card, .grid {
-        width: calc(100%-30px);
+    
+    nav, header, main .banner, .banner .content, .banner .img, .cards, .cardss, .card, .grid,  footer, .f1, .f2, .f3, .fcon {
+        width: calc(100%-20px);
 
     }
     .box3, .box2, .box4, .box5{
-        width: 50%;
+        width: calc(50%-10px);
     }
 
     .content, .banner{
@@ -323,7 +402,7 @@ h3{
     .bt{
         display: block;
     }
-    .cardss{
+    .cardss,  footer, .f1, .f2, .f3, .fcon{
         flex-direction: column;
     }
 
@@ -339,9 +418,14 @@ h3{
         " box2 box3" ;
         
     }
-
+    .grid img{
+        width: 100%;
+    }
     .box1{
         display: none;
+    }
+    .bt{
+        margin: auto;
     }
 }
     
