@@ -1,6 +1,6 @@
 
 header{
-    
+    margin-inline:auto ;
     max-width: 1440px;
     min-height: 102px;
     padding: 20px 0;
@@ -72,6 +72,7 @@ main .banner{
     max-width: 1159px;
     min-height: 575px;
     gap: 50px;
+    padding: 10px;
     justify-content: center;
     align-items: center;
     margin-inline: auto;
@@ -373,13 +374,18 @@ marquee{
     .box3, .box2, .box4, .box5{
         width: calc(50%-10px);
     }
-
+    
+    
     .content, .banner{
         text-align: center;
         align-items: center;
         justify-content: center;
-        padding: 0;
-        margin: 0;
+        
+    }
+
+    .grid{
+        position: relative;
+        left: -18px;
     }
     .banner{
         flex-direction: column-reverse;
